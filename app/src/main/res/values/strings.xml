@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name" translatable="false">Ssc</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_product">Products</string>
+    <string name="title_notifications">Sign In</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_sales">Sales</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_scan" translatable="false">ScanActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="Rs" translatable="false">\u20B9</string>
+    <string name="customer_name_optional">Customer Name (Optional)</string>
+    <string name="customer_number_optional">Customer Number (Optional)</string>
+    <string name="customer_city_optional">Customer City (Optional)</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="txt_save">Save</string>
+    <string name="edit_price">Edit price</string>
+    <string name="title_return">Return</string>
+    <string name="txtCash">Cash</string>
+    <string name="title_summary">Summary</string>
+    <string name="txtEmpty">Empty</string>
+    <string name="scan_the_qr_code">Scan the QR code</string>
+    <string name="close">close</string>
+    <string name="product_code">Product Code</string>
+    <string name="product_name">Product Name</string>
+    <string name="purchase_date">Purchase Date</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="selling_price">Selling Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="txt_quantity">Quantity :&#160;</string>
+
+    <string name="add_product">Add Product</string>
+    <string name="price">Price :&#160;</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="one" translatable="false">1</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="btn_return">Return</string>
+    <string name="quantity_available">Quantity Available :&#160;</string>
+    <string name="btn_add_to_cart">Add To Cart</string>
+    <string name="cart_empty">Cart Empty</string>
+    <string name="btn_checkout">Checkout</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="search_product">Search Product</string>
+    <string name="no_product_found">No Product Found.</string>
+    <string name="return_products">Return Products</string>
+    <string name="empty">Empty</string>
+    <string name="estimate">Estimate</string>
+    <string name="name">Name :&#160;</string>
+    <string name="mobile_no">Mobile No. :&#160;</string>
+    <string name="city">City :&#160;</string>
+    <string name="sales_person">Sales Person :&#160;</string>
+    <string name="items">Items</string>
+    <string name="print">Print</string>
+    <string name="customer">Customer :&#160;</string>
+    <string name="save_price_first">Save price first</string>
+    <string name="quantity_grt_then_availabiltiy">Quantity is greater than availability</string>
+    <string name="pager_sales">Sale</string>
+    <string name="pager_return">Return</string>
+    <string name="are_you_sure_want_to_return_product">Are you sure you want to return product?</string>
+    <string name="toast_product_code">Enter product code</string>
+    <string name="toast_product_name">Enter product name</string>
+    <string name="toast_purchase_date">Enter Purchase date</string>
+    <string name="toast_purchase_price">Enter purchase price</string>
+    <string name="toast_selling_price">Enter selling price</string>
+    <string name="toast_quantity">Enter quantity</string>
+    <string name="are_you_sure_want_to_checkout">Are you sure you want to checkout?</string>
+    <string name="total">Total :&#160;</string>
+    <string name="quantity_colon">Quantity :&#160;</string>
+    <string name="permission_denied">Permission request denied</string>
+    <string name="hindi_language" translatable="false">Hindi Language</string>
+</resources>

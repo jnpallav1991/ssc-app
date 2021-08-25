@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPTotalQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:padding="10dp"
+        android:text="@string/quantity_available"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductName"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtProductTotalQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductName"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPTotalQuantity"/>
+
+    <TextView
+        android:id="@+id/txtPPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:padding="10dp"
+        android:text="@string/price"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductTotalQuantity" />
+
+   <!-- <TextView
+        android:id="@+id/txtProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand"
+        android:padding="10dp"
+        android:text="45.00"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductTotalQuantity" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:errorEnabled="false"
+        app:boxBackgroundColor="@color/colorWhite"
+        app:hintEnabled="false"
+        app:prefixText="@string/Rs"
+        app:layout_constraintEnd_toStartOf="@+id/txtProductEdit"
+        app:layout_constraintStart_toEndOf="@+id/txtPPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductTotalQuantity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/quicksand"
+            android:textSize="15sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtProductEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand_light"
+        android:padding="10dp"
+        android:text="@string/edit_price"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductTotalQuantity" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccAddCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edProductPrice">
+
+        <TextView
+            android:id="@+id/txtMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="@string/minus"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtQuantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/one"
+            android:maxLength="6"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/txtPlus"
+            app:layout_constraintStart_toEndOf="@+id/txtMinus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPlus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp"
+            android:text="@string/plus"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtQuantity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textButton"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/quicksand"
+        android:text="@string/btn_add_to_cart"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccAddCart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
